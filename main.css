@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    position: relative;
+    font-family: Roboto, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+nav {
+    background-color: #33292a;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    z-index: 1;
+}
+.nav-more {
+    display: none; 
+}
+.nav-hide {
+    margin: 1em;
+}
+
+
+.hero {
+    position: relative;
+}
+.hero img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    margin: 0;
+    margin-left: 100%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+
+.middle {
+    padding: 3em 2em;
+}
+h2 {
+    margin: 1em 0;
+    font-size: 1.8em;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 2em;
+}
+
+
+.what-we-do {
+    color: #fff;
+    background-color: #33292a;
+    text-align: center;
+}
+.what-we-do img {
+    width: 5em;
+    margin-top: 2em;
+    object-fit: cover;
+}
+.icons p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.spaced  {
+    margin-top : 10px !important;
+}
+
+
+.trips {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.trips img {
+    border-radius: 5px;
+    height: 12em;
+    width: 100%;
+    object-fit: cover;
+}
+.trips div {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.contact {
+    color: #fff;
+    background-color: #644b4f;
+}
+.contact button {
+    margin: 2.5em 0 1.5em;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+
+.reviews {
+    text-align: center;
+}
+.reviews img {
+    margin-top: 2em;
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+}
+
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+}
+.showcase img {
+    height: 14em;
+    object-fit: cover;
+}
+
+
+footer {
+    color: #fff;
+    background-color: #333333;
+    text-align: center;
+    padding: 2em 2em 1em;
+}
+footer a {
+    color: #efa69d;
+    text-underline-offset: 4px;
+}
+footer a:hover {
+    color: #e9877b;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        padding: 1.5em 0;
+    }
+    .nav-more {
+        width: inherit;
+        margin: 0 10em;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-weight: bold;
+    }
+    .nav-hide {
+        display: none;
+    }
+
+
+    h1 {
+        font-size: 5em;
+        right: 150px;
+        bottom: 50px;
+    }
+
+
+    .middle {
+        padding: 5em 20%;
+    }
+
+
+    .about {
+        display: flex;
+        grid-template-columns: repeat(2, auto);
+        gap: 3em;
+    }
+    .about p {
+        margin: 0;
+    }
+    .about img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+
+    .icons {
+        margin-top: 6em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .icons p {
+        margin-top: 10px;
+    }
+
+
+    .trips {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+    .trips img {
+        width: calc(100% / 3 - 1em);
+        object-fit: cover;
+    }
+    .trips div {
+        width: calc(100% / 3 - 1em + 2px);
+        
+    }
+    .trips p {
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+
+
+    .contact {
+        display: flex;
+        gap: 3em;
+    }
+    .contact h2 {
+        margin: 16px 0;
+    }
+    .contact div {
+        width: 90%;
+    }
+
+
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+    .reviews img {
+        margin: 0;
+    }
+    .review-h {
+        width: 50%; margin: auto;
+    }
+    .review-1, .review-2 {
+        width: calc(100% / 2 - 2em);
+    }
+
+
+    .showcase {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .showcase img {
+        width: 50%;
+        height: 20em;
+    }
+}
